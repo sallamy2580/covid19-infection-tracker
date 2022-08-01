@@ -1,0 +1,327 @@
+body {
+  height: 100%;
+  background: black;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  background: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.globe {
+  width: 100%;
+  height: 100%;
+}
+
+.splash {
+  width: 100%;
+  height: 1000px;
+}
+
+/* News Container */
+
+.news-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 350px;
+}
+
+.card {
+  display: flex;
+  width: 10rem;
+  height: auto;
+  font-size: 14px;
+  opacity: .7;
+  float: left;
+  margin-right: 11px;
+  margin-bottom: 16px;
+}
+
+.card-body {
+  height: 140px;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  font-size: 10px;
+}
+
+#news-link {
+  width: 88px;
+  font-size: 8px;
+}
+
+.card-img-top {
+  height: 100px;
+}
+
+/* Info Container */
+
+.info-container {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: black;
+  background: #ffffff99;
+  height: 252px;
+  width: 300px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.info-title {
+  width: auto;
+  padding: 5px 0px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background: #00bcd4d4;
+  height: 47px;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 5px;
+  border-bottom: none;
+}
+
+.info {
+  margin-top: 4%;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  padding: 8px 0px;
+  opacity: 1;
+}
+
+.info-table{
+  width: 92%;
+  margin: 0 auto;
+}
+
+.api-link {
+  text-align: left;
+  margin-left: 12px;
+  padding-top: 5px;
+}
+
+.info-updated {
+  font-size: 14px;
+}
+
+/* Continents Container */
+
+.continents-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.continent {
+  font-size: 16px;
+  float: left;
+  margin: 27px;
+  color: whitesmoke;
+  width: auto;
+  padding: 14px;
+}
+
+.continent:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #00bcd4d4;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+button.continent {
+  background: #00BCD4;
+}
+
+button.continent:hover {
+  background-color: #fff;
+  ;
+  color: black;
+}
+
+/* Search */
+
+.search-container {
+  width: 332px;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #ffffff99;
+  border-radius: 5px;
+}
+
+.input-group-text {
+  height: 31px;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:focus {
+  background: #00bcd4d4;
+  border: none;
+}
+
+.dropdown-menu {
+  height: 215px;
+  overflow: auto;
+  width: 182px;
+  border-radius: 5px;
+  background-color: #ffffff99;
+}
+
+.dropdown-menu.show {
+  position: absolute;
+  inset: 0px 0px 0px 0px !important;
+  margin: 0px;
+  transform: translate(-196px, 0px) !important;
+}
+
+/* stateInfo */
+
+.btn-secondary {
+  width: 100%;
+}
+
+.state-info-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.state-info {
+  margin-top: 4%;
+  text-align: left;
+  padding-left: 3px;
+  font-size: 17px;
+  height: 240px;
+}
+
+.state-table{
+  width: 100%;
+}
+
+/* CDC Container */
+
+.cdc-container {
+  width: 332px;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  background-color: #ffffff99;
+  border-radius: 5px;
+}
+
+.cdc-title {
+  color: black;
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-container {
+    position: inherit;
+    color: black;
+    background: #ffffff99;
+    height: 252px;
+    width: 314px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  .news-container {
+    position: inherit;
+    margin-top: 15px;
+  }
+  .cdc-container {
+    position: inherit;
+    margin: 0 auto;
+  }
+  .search-container {
+    position: inherit;
+    width: 332px;
+    background-color: #ffffff99;
+    border-radius: 5px;
+    margin-top: 18px;
+  }
+  .continents-container {
+    position: absolute;
+    width: 57%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 265px;
+  }
+}
+
+.info-fade {
+  animation: example .2s;
+}
+
+@keyframes example {
+  from {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(50, 241, 255, 0.404);
+    color: black;
+    padding: 0px 10px;
+  }
+  to {
+    background-color: inherit;
+    border-radius: 5px;
+    background-color: rgba(50, 241, 255, 0.404);
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    
+  }
+}
+
+.api {
+  font-size: 12px;
+}
