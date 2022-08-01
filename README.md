@@ -26,7 +26,7 @@ Users are able to select a country on a globe and the COVID19 statistics are dis
 
 # Installation Requirements 
 
-1. Clone my portfolio in the command line by entering: git clone https://github.com/jaredseefried/covid19-pandemic-tracker.git 
+1. Clone my portfolio in the command line by entering: git clone https://github.com/jaredseefried/covid19-infection-tracker.git 
 
 2. Install required libraries from entering in the command line: npm install
 
